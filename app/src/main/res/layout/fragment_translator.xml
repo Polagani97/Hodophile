@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    tools:context=".TranslatorActivity">
+
+    <!--edit text to enter your input-->
+    <EditText
+        android:id="@+id/idEdtLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Enter your name to translate"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idTVTranslatedLanguage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--button to translate language of the input text-->
+    <Button
+        android:id="@+id/idBtnTranslateLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
+        android:text="Translate language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTVTranslatedLanguage" />
+
+    <!--text view to display the translated text-->
+    <TextView
+        android:id="@+id/idTVTranslatedLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:text="Translated language"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idBtnTranslateLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtLanguage"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

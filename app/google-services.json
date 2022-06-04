@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399490067160",
+    "project_id": "fcm-hodophile",
+    "storage_bucket": "fcm-hodophile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399490067160:android:97ae15dc375221283a45ad",
+        "android_client_info": {
+          "package_name": "com.example.hodophile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399490067160-hhoddhe0imcnj310l0tfq7l8mmf8l1o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUEhexcgePENOndb0tJ5MPPIJaOTUvxRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399490067160-hhoddhe0imcnj310l0tfq7l8mmf8l1o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

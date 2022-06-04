@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:id="@+id/itemRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="5.0"
+            android:textColor="@color/text_blue"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/price_range"
+            android:textColor="@color/text_blue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/itemImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemRating" />
+
+        <TextView
+            android:id="@+id/itemAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/address"
+            android:textColor="@color/text_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemPrice"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/name"
+            android:textColor="@color/text_blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/error_placeholder_small" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/itemRating"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            app:srcCompat="@android:drawable/btn_star"
+            app:tint="@color/blue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

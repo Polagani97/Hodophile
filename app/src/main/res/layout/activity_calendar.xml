@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/monthYearTV"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="May 2021"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sunday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/monday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tuesday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wednesday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thursday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/friday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/saturday"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200" />
+
+    <ListView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tripListView"/>
+
+
+</LinearLayout>

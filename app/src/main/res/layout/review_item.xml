@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userPicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@mipmap/default_profile_picture" />
+
+        <TextView
+            android:id="@+id/reviewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/text_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userPicture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015"
+            tools:text="@string/username" />
+
+        <RatingBar
+            android:id="@+id/reviewRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:isIndicator="true"
+            android:progressTint="@color/blue"
+            app:layout_constraintStart_toStartOf="@+id/reviewUsername"
+            app:layout_constraintTop_toBottomOf="@+id/reviewUsername" />
+
+        <TextView
+            android:id="@+id/reviewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/date"
+            android:textColor="@color/text_blue"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/add_review"
+            android:textColor="@color/text_blue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/reviewRating"
+            app:layout_constraintTop_toBottomOf="@+id/reviewRating" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

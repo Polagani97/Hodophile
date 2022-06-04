@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <ImageButton
+        android:id="@+id/addReviewClose"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/blue"
+        android:contentDescription="@string/close" />
+
+    <TextView
+        android:id="@+id/addReviewLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/location"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="7.5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/ratingBarBG"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addReviewLocation" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/add_review"
+        android:textColor="@color/text_blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addReviewText"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/type_review_here"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarBG" />
+
+    <RatingBar
+        android:id="@+id/addRatingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:progressTint="@color/blue"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBarBG"
+        app:layout_constraintStart_toStartOf="@+id/ratingBarBG"
+        app:layout_constraintTop_toBottomOf="@+id/addReviewLocation" />
+
+    <Button
+        android:id="@+id/addReviewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addReviewText"
+        app:layout_constraintVertical_bias="0.002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

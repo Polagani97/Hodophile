@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_event_note_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_accommodation"
+            android:icon="@drawable/ic_baseline_hotel_24"
+            android:title="@string/menu_accommodation" />
+        <item
+            android:id="@+id/nav_attractions"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="@string/menu_attractions" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_baseline_wb_cloudy_24"
+            android:title="@string/menu_weather" />
+    </group>
+
+</menu>
